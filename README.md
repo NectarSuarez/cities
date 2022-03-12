@@ -14,6 +14,6 @@ latitude  = 42.98339
 longitude = -81.23304
 
 
-El micro servicio esta alojado en Azure ya que en GCloud tenía muchos problemas para poder responder.
+El micro servicio esta alojado en Azure ya que en GCloud tenía muchos problemas para poder responder a las peticiones y de compatibilidad con el AppEngine.
 
 Dentro del código hay comentarios explicando el funcionamiento del Micro Servicio.
