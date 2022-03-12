@@ -8,9 +8,11 @@ https://cities-1647045507708.azurewebsites.net/Geo/suggestions?q=London&latitude
 
 Admite la entrada de 3 valores
 por ejemplo:
+
 q         = London
 latitude  = 42.98339
 longitude = -81.23304
+
 
 El micro servicio esta alojado en Azure ya que en GCloud tenía muchos problemas para poder responder.
 
