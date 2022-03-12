@@ -2,7 +2,7 @@
 Néctar Suárez 2022-03-11
 
 Ejemplo de como consumir el servicio
-Es del meotod GET
+Es del metodo GET:
 
 https://cities-1647045507708.azurewebsites.net/Geo/suggestions?q=London&latitude=42.98339&longitude=-81.23304
 
