@@ -37,11 +37,12 @@ public class geoService {
 	{	
 		List<geoname> citiesList = new ArrayList<geoname>();
 		List<geoname> filteredList = new ArrayList<geoname>();
+		String fileName = "https://almacenamientogeo.file.core.windows.net/archivo/test.json?sv=2020-10-02&st=2022-03-14T06%3A04%3A51Z&se=2022-03-21T06%3A04%3A00Z&sr=f&sp=r&sig=j8KaDXirb1qVLyC%2FqkE7nQckj9sETyLr%2BOMho6kgvPk%3D";
 		
 		try
 		{
 			// Archivo de donde se consumen las ciudades - Esta alojado en el mismo servidor de la aplicación
-			URL url = new URL("https://almacenamientogeo.file.core.windows.net/archivo/test.json?sv=2020-10-02&st=2022-03-11T20%3A15%3A02Z&se=2022-03-12T20%3A15%3A02Z&sr=f&sp=r&sig=RAP45Xy7EVbWSdrREbB3DpyhlkHG7J0ft4V5VUkg%2B5A%3D");
+			URL url = new URL(fileName);
 			ObjectMapper mapper = new ObjectMapper().configure(DeserializationFeature.ACCEPT_SINGLE_VALUE_AS_ARRAY, true);
 	        CollectionType collectionTypes = mapper.getTypeFactory().constructCollectionType(List.class, geoname.class);
 	        citiesList = mapper.readValue(url.openStream(), collectionTypes);
